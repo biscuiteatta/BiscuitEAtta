@@ -250,184 +250,148 @@ function createBottomRightDecoration() {
 
 // Ingredients data
 const ingredientsData = {
-   'truffle-risotto': {
-      title: 'Truffle Risotto',
+   'atta-salty': {
+      title: 'Atta Biscuit(Salty)',
       ingredients: [{
-            name: 'Arborio Rice',
+            name: '100% Whole Wheat Atta',
             allergen: false
          },
          {
-            name: 'Black Truffle',
+            name: 'Pure Desi Ghee(Amul)',
             allergen: false
          },
          {
-            name: 'Parmesan Cheese',
-            allergen: true
-         },
-         {
-            name: 'Vegetable Stock',
+            name: 'A2 Fresh Milk(Amul)',
             allergen: false
          },
          {
-            name: 'White Wine',
+            name: 'Desi Khand(raw unrefined sugar)',
             allergen: false
          },
          {
-            name: 'Butter',
-            allergen: true
-         },
-         {
-            name: 'Fresh Herbs',
+            name: 'Iodized Salt',
             allergen: false
          },
          {
-            name: 'Shallots',
+            name: 'Azwain(carom seeds)',
             allergen: false
          }
       ]
    },
-   'grilled-salmon': {
-      title: 'Grilled Salmon',
+   'atta-sweet': {
+      title: 'Atta Biscuit(Sweet)',
       ingredients: [{
-            name: 'Atlantic Salmon',
-            allergen: true
-         },
-         {
-            name: 'Lemon',
+            name: '100% Whole Wheat Atta',
             allergen: false
          },
          {
-            name: 'Butter',
-            allergen: true
-         },
-         {
-            name: 'Seasonal Vegetables',
+            name: 'Pure Desi Ghee(Amul)',
             allergen: false
          },
          {
-            name: 'Olive Oil',
+            name: 'A2 Fresh Milk(Amul)',
             allergen: false
          },
          {
-            name: 'Fresh Dill',
+            name: 'Desi Khand(raw unrefined sugar)',
             allergen: false
          },
          {
-            name: 'Sea Salt',
-            allergen: false
-         },
-         {
-            name: 'Black Pepper',
+            name: 'Iodized Salt',
             allergen: false
          }
+         
       ]
    },
-   'beef-wellington': {
-      title: 'Beef Wellington',
+   'atta-jaggery': {
+      title: 'Atta Biscuit(Jaggery)',
       ingredients: [{
-            name: 'Beef Tenderloin',
+            name: '100% Whole Wheat Atta',
             allergen: false
          },
          {
-            name: 'Puff Pastry',
-            allergen: true
-         },
-         {
-            name: 'Mushroom Duxelles',
+            name: 'Pure Desi Ghee(Amul)',
             allergen: false
          },
          {
-            name: 'Prosciutto',
+            name: 'A2 Fresh Milk(Amul)',
             allergen: false
          },
          {
-            name: 'Egg Wash',
-            allergen: true
-         },
-         {
-            name: 'Fresh Thyme',
+            name: 'Jaggery',
             allergen: false
          },
          {
-            name: 'Dijon Mustard',
-            allergen: false
-         },
-         {
-            name: 'Red Wine Jus',
+            name: 'Iodized Salt',
             allergen: false
          }
+         
       ]
    },
-   'lobster-thermidor': {
-      title: 'Lobster Thermidor',
+   'atta-besan': {
+      title: 'Besan Biscuit(Sweet)',
       ingredients: [{
-            name: 'Fresh Lobster',
-            allergen: true
+            name: '50% Whole Wheat Atta',
+            allergen: false
          },
-         {
-            name: 'Cognac',
+		 {
+            name: '50% Besan',
             allergen: false
          },
          {
-            name: 'Heavy Cream',
-            allergen: true
-         },
-         {
-            name: 'Gruyere Cheese',
-            allergen: true
-         },
-         {
-            name: 'Butter',
-            allergen: true
-         },
-         {
-            name: 'Egg Yolks',
-            allergen: true
-         },
-         {
-            name: 'Fresh Tarragon',
+            name: 'Pure Desi Ghee(Amul)',
             allergen: false
          },
          {
-            name: 'White Pepper',
+            name: 'A2 Fresh Milk(Amul)',
+            allergen: false
+         },
+         {
+            name: 'Desi Khand(raw unrefined sugar)',
+            allergen: false
+         },
+         {
+            name: 'Iodized Salt',
             allergen: false
          }
+         
       ]
    },
-   'duck-confit': {
-      title: 'Duck Confit',
+   'multigrain': {
+      title: 'Multigrain',
       ingredients: [{
-            name: 'Duck Leg',
+            name: 'Ragi flour(Finger millet)',
+            allergen: false
+         },
+		 {
+            name: 'Jow flour(Barley)',
+            allergen: false
+         },
+		 {
+            name: 'Jawar flour(Sorghum or Milo)',
+            allergen: false
+         },
+		 {
+            name: 'Chana flour(Gram)',
             allergen: false
          },
          {
-            name: 'Duck Fat',
+            name: 'Pure Desi Ghee(Amul)',
             allergen: false
          },
          {
-            name: 'Garlic Potatoes',
+            name: 'A2 Fresh Milk(Amul)',
             allergen: false
          },
          {
-            name: 'Fresh Cherries',
+            name: 'Desi Khand(raw unrefined sugar)',
             allergen: false
          },
          {
-            name: 'Red Wine Vinegar',
-            allergen: false
-         },
-         {
-            name: 'Fresh Thyme',
-            allergen: false
-         },
-         {
-            name: 'Bay Leaves',
-            allergen: false
-         },
-         {
-            name: 'Coarse Salt',
+            name: 'Iodized Salt',
             allergen: false
          }
+         
       ]
    },
    'chocolate-souffle': {
@@ -438,7 +402,7 @@ const ingredientsData = {
          },
          {
             name: 'Eggs',
-            allergen: true
+            allergen: false
          },
          {
             name: 'Sugar',
@@ -446,7 +410,7 @@ const ingredientsData = {
          },
          {
             name: 'Butter',
-            allergen: true
+            allergen: false
          },
          {
             name: 'Vanilla Ice Cream',
