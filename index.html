@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiscuitEAtta - Pure Atta Biscuits</title>
+    <link rel="stylesheet" href="tooplate-bistro-elegance.css">
+<!--
+
+Tooplate 2148 Bistro Elegance
+
+https://www.tooplate.com/view/2148-bistro-elegance
+
+Free HTML CSS Template
+
+-->
+</head>
+<body>
+   
+        <div class="nav-container">
+            <a href="https://www.biscuiteatta.com/" class="logo">
+				<img src="/images/logo.png" width="200" height="50">
+            </a>
+            <ul class="nav-links">
+                <li><a href="https://www.biscuiteatta.com/" class="active">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="my-background-div">
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Signature Taste</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="/images/attaSalty.jpeg" alt="Truffle Risotto" class="menu-item-image">
+                <div class="menu-item-content">
+                    <h3>Atta Biscuit(Salty)</h3>
+                    <p>Made with whole wheat (Atta), Pure Desi Ghee, iodized salt with azwain(carom seeds) flavour</p>
+                    <div class="price">Rs 189/-</div>
+                    <button class="ingredients-btn" onclick="showIngredients('truffle-risotto')">View Ingredients</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="/images/attaSweet.jpeg" alt="Grilled Salmon" class="menu-item-image">
+                <div class="menu-item-content">
+                    <h3>Atta Biscuit(Sweet)</h3>
+                    <p>Made with whole wheat flour(Atta), Pure Desi Ghee with sweetnes of Desi Khand(raw unrefined sugar)</p>
+                    <div class="price">Rs 189/-</div>
+                    <button class="ingredients-btn" onclick="showIngredients('grilled-salmon')">View Ingredients</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="/images/attaJaggery.jpeg" alt="Beef Wellington" class="menu-item-image">
+                <div class="menu-item-content">
+                    <h3>Atta Biscuit(Jaggery)</h3>
+                    <p>Made with whole wheat flour(Atta), Pure Desi Ghee with sweetnes of Jaggery</p>
+                    <div class="price">Rs 189/-</div>
+                    <button class="ingredients-btn" onclick="showIngredients('beef-wellington')">View Ingredients</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="/images/besan.jpeg" alt="Lobster Thermidor" class="menu-item-image">
+                <div class="menu-item-content">
+                    <h3>Besan Biscuit</h3>
+                    <p>Made with whole wheat flour(Atta), Besan, Pure Desi Ghee with sweetnes of Desi Khand(raw unrefined sugar)</p>
+                    <div class="price">Rs 189/-</div>
+                    <button class="ingredients-btn" onclick="showIngredients('lobster-thermidor')">View Ingredients</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="/images/multigrain.jpeg" alt="Duck Confit" class="menu-item-image">
+                <div class="menu-item-content">
+                    <h3>Multigrain Biscuit</h3>
+                    <p>Made with mix flour(atta) of Ragi(Finger millet), Jow(Barley), Jawar(Sorghum or Milo), Chana(Gram)and Pure Desi Ghee with sweetnes of Desi Khand(raw unrefined sugar)</p>
+                    <div class="price">Rs 189/-</div>
+                    <button class="ingredients-btn" onclick="showIngredients('duck-confit')">View Ingredients</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="/images/choclate.png" alt="Chocolate Soufflé" class="menu-item-image">
+                <div class="menu-item-content">
+                    <h3>Chocolate Biscuit</h3>
+                    <p>Made with whole wheat flour(Atta), Pure Desi Ghee with sweetnes of Desi Khand(raw unrefined sugar) with Warm chocolate soufflé</p>
+                    <div class="price">Rs 189/-</div>
+                    <button class="ingredients-btn" onclick="showIngredients('chocolate-souffle')">View Ingredients</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation">
+        <div class="reservation">
+            <div class="reservation-left">
+                <h2>Feedback / Order</h2>
+                <form class="reservation-form" onsubmit="handleReservation(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name*</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="taste">Taste</label>
+                        <select id="taste" name="taste" required>
+                            <option value="">Select Taste</option>
+                            <option value="17:00">Atta-Sweet(Desi Khand)</option>
+                            <option value="17:30">Atta-Sweet(Jaggery)</option>
+                            <option value="18:00">Besan-Sweet(Desi Khand)</option>
+                            <option value="18:30">Atta-Salty(Desi Khand)</option>
+                            <option value="19:00">Multigrain</option>
+                            <option value="19:30">Organic Atta-Sweet(Desi Khand)</option>
+                           
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Packet</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select Packet</option>
+                            <option value="1">1 </option>
+                            <option value="2">2 </option>
+                            <option value="3">3 </option>
+                            <option value="4">4 </option>
+                            <option value="5">5 </option>
+                            <option value="6">6 </option>
+                            <option value="7">7 </option>
+                            <option value="8">8 </option>
+							<option value="9">9 </option>
+                            <option value="10">10 </option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="special">Special Message</label>
+                        <textarea id="special" name="special" rows="5" placeholder="Any dietary restrictions or special occasions?"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+            <div class="reservation-right">
+                <img src="/images/multigrain2.png" alt="Restaurant Interior" class="reservation-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>271 Galleria Street<br>
+                Gurugram District, Haryana 122001<br>
+                Phone: +91-7982614916<br>
+                Email: biscuiteatta@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p>Monday - Sunday: 07:00 AM - 10:00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p><a href="https://www.facebook.com/profile.php?id=61582239114799">Facebook</a><br>
+                <a href="https://www.instagram.com/biscuit_e_atta/">Instagram</a><br>
+                <a href="https://www.instagram.com/biscuit_e_atta/">Twitter</a><br>
+                <a href="https://www.instagram.com/biscuit_e_atta/">Youtube</a></p>
+            </div>
+        </div>
+        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #555; text-align: center;">
+            <p>&copy; 2025 Biscuit-E-Atta. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <span>|</span>
+                <a href="#">Terms & Conditions</a>
+                <span>|</span>
+                <a href="#">Sitemap</a>
+                <span>|</span>
+                <a rel="nofollow noopener" href="https://www.tooplate.com" target="_blank">Designed by Tooplate</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ingredients Modal -->
+    <div id="ingredientsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle">Dish Ingredients</h3>
+            <ul id="ingredientsList" class="ingredient-list"></ul>
+        </div>
+    </div>
+
+<script src="tooplate-bistro-scripts.js"></script>
+</body>
+</html>
