@@ -485,7 +485,7 @@ function handleReservation(e) {
    };
 
    // Simulate form submission
-   alert(`Thank you, ${reservation.name}! Your reservation for ${reservation.guests} guests on ${reservation.date} at ${reservation.time} has been confirmed. We will send a confirmation email to ${reservation.email}.`);
+   alert(`Thank you for contacting us. We will revert back you soon.`);
 
    // Reset form
    e.target.reset();
@@ -526,3 +526,4 @@ document.addEventListener('DOMContentLoaded', () => {
       homeLink.classList.add('active');
    }
 });
+
