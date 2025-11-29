@@ -394,38 +394,26 @@ const ingredientsData = {
          
       ]
    },
-   'chocolate-souffle': {
-      title: 'Chocolate Soufflé',
+  'bajra': {
+      title: 'Bajra Biscuit(Sweet)',
       ingredients: [{
-            name: 'Dark Chocolate',
+            name: '100% Whole Bajra(Pearl Millet) Atta',
             allergen: false
          },
          {
-            name: 'Eggs',
+            name: 'Pure Desi Ghee(Amul)',
             allergen: false
          },
          {
-            name: 'Sugar',
+            name: 'A2 Fresh Milk(Amul)',
             allergen: false
          },
          {
-            name: 'Butter',
+            name: 'Desi Khand(raw unrefined sugar)',
             allergen: false
          },
          {
-            name: 'Vanilla Ice Cream',
-            allergen: true
-         },
-         {
-            name: 'Mixed Berries',
-            allergen: false
-         },
-         {
-            name: 'Heavy Cream',
-            allergen: true
-         },
-         {
-            name: 'Vanilla Extract',
+            name: 'Iodized Salt',
             allergen: false
          }
       ]
@@ -526,4 +514,5 @@ document.addEventListener('DOMContentLoaded', () => {
       homeLink.classList.add('active');
    }
 });
+
 
