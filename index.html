@@ -97,58 +97,24 @@
         <div class="reservation">
             <div class="reservation-left">
                 <h2>Contact Us</h2>
-                <form class="reservation-form" onsubmit="handleReservation(event)">
-                    <div class="form-group">
-                        <label for="name">Full Name*</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email*</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                   <!--  <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                   <div class="form-group">
-                        <label for="date">Date</label>
-                        <input type="date" id="date" name="date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="taste">Taste</label>
-                        <select id="taste" name="taste" required>
-                            <option value="">Select Taste</option>
-                            <option value="17:00">Atta-Sweet(Desi Khand)</option>
-                            <option value="17:30">Atta-Sweet(Jaggery)</option>
-                            <option value="18:00">Besan-Sweet(Desi Khand)</option>
-                            <option value="18:30">Atta-Salty(Desi Khand)</option>
-                            <option value="19:00">Multigrain</option>
-                            <option value="19:30">Organic Atta-Sweet(Desi Khand)</option>
-                           
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="guests">Number of Packet</label>
-                        <select id="guests" name="guests" required>
-                            <option value="">Select Packet</option>
-                            <option value="1">1 </option>
-                            <option value="2">2 </option>
-                            <option value="3">3 </option>
-                            <option value="4">4 </option>
-                            <option value="5">5 </option>
-                            <option value="6">6 </option>
-                            <option value="7">7 </option>
-                            <option value="8">8 </option>
-							<option value="9">9 </option>
-                            <option value="10">10 </option>
-                        </select>
-                    </div> -->
-                    <div class="form-group full-width">
-                        <label for="special">Special Message</label>
-                        <textarea id="special" name="special" rows="5" placeholder="Any dietary restrictions or special occasions?"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn" align="center">Submit</button>
-                </form>
+                <form action="https://formspree.io/f/xkgdkrbp" method="POST">
+			  <label>
+			    Your Name:
+			    <input type="text" name="name" required>
+			  </label>
+			
+			  <label>
+			    Your Email:
+			    <input type="email" name="email" required>
+			  </label>
+			
+			  <label>
+			    Message:
+			    <textarea name="message" required></textarea>
+			  </label>
+			
+			  <button type="submit">Send Message</button>
+			</form>
             </div>
             <div class="reservation-right">
                 <img src="images/multigrain2.png" alt="Restaurant Interior" class="reservation-image">
@@ -203,5 +169,6 @@
 <script src="tooplate-bistro-scripts.js"></script>
 </body>
 </html>
+
 
 
