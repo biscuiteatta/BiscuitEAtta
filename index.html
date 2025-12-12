@@ -97,23 +97,20 @@
         <div class="reservation">
             <div class="reservation-left">
                 <h2>Contact Us</h2>
-                <form action="https://formspree.io/f/xkgdkrbp" method="POST">
-			  <label>
-			    Your Name:
-			    <input type="text" name="name" required>
-			  </label>
-			
-			  <label>
-			    Your Email:
-			    <input type="email" name="email" required>
-			  </label>
-			
-			  <label>
-			    Message:
-			    <textarea name="message" required></textarea>
-			  </label>
-			
-			  <button type="submit">Send Message</button>
+                <form action="https://formspree.io/f/xkgdkrbp" method="POST" class="reservation-form">
+			 		<div class="form-group">
+                        <label for="name">Your Name*</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+			        <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>	
+					 <div class="form-group full-width">
+                        <label for="special">Message</label>
+                        <textarea id="special" name="message" rows="5" placeholder="For Order, add your mobile number also." required></textarea>
+                    </div>
+			  <button type="submit" class="submit-btn">Send Message</button>
 			</form>
             </div>
             <div class="reservation-right">
@@ -169,6 +166,7 @@
 <script src="tooplate-bistro-scripts.js"></script>
 </body>
 </html>
+
 
 
 
