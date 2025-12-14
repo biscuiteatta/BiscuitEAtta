@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BiscuitEAtta - Pure Atta Biscuits</title>
     <link rel="stylesheet" href="tooplate-bistro-elegance.css">
-
+<style>
+  body {
+    background-image: url("images/Wheat.jpg");
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover;      /* Scales the image to cover the entire container */
+    background-attachment: fixed;/* Makes the background stay fixed when scrolling */
+  }
+</style>
 </head>
 <body>
    
@@ -14,10 +21,10 @@
 				<img src="images/logo.jpeg" width="200" height="65">
             </a>
             <ul class="nav-links">
-                <li><a href="https://www.biscuiteatta.com/" class="active">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#reservation">Order</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://www.biscuiteatta.com/" class="active"><b>Home</b></a></li>
+                <li><a href="#menu"><b>Menu</b></a></li>
+                <li><a href="#reservation"><b>Order</b></a></li>
+                <li><a href="#contact"><b>Contact</b></a></li>
             </ul>
             <div class="menu-toggle">
                 <span></span>
@@ -215,6 +222,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
 <script src="tooplate-bistro-scripts.js"></script>
 </body>
 </html>
+
 
 
 
